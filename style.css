@@ -1,0 +1,117 @@
+* Set the background color of body to tan */
+body {
+  background-color: tan;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: rgb(169, 169, 233);
+    color:white;
+  }
+}
+
+/* On screens that are 480px or less, set the background color to olive */
+@media screen and (max-width: 480px) {
+    .transition-effect{
+        
+    background-color: olive;
+    margin: 0 auto;
+  }
+}
+
+
+/* animation */
+.transition-effect{
+    white-space: nowrap;
+    position: relative;
+    color: transparent;
+}
+.transition-effect::before{
+    content: 'hello kanye';
+    position: absolute;
+    color:white;
+    top: 0;
+    left: 0;
+    animation: typing 4s infinite;
+    /* text-align: center; */
+    }
+    
+    @keyframes typing{
+    
+    0%{
+        content: 'h_';
+    }
+    5%{
+        content: 'he_';
+    }
+    10%{
+        content: 'hel_';
+    }
+    15%{
+        content: 'hell_';
+    }
+    20%{
+        content: 'hello_';
+    }
+    25%{
+        content: 'Photog_';
+    }
+    30%{
+        content: 'hello _';
+    }
+    35%{
+        content: 'hello k_';
+    }
+    40%{
+        content: 'hello ka_';
+    }
+    45%{
+        content: 'hello kan_';
+    }
+    50%{
+        content: 'hello kany_';
+    }
+    55%{
+        content: 'hello kanye_';
+    }
+    60%, 88%{
+        content: ' _';
+    }
+    89%{
+    content: '_';
+    }
+    90%{
+    content: 'hello kanye_';
+    }
+    91%{
+        content: 'ello kanye_';
+    }
+    92%{
+        content: 'llo kanye_';
+    }
+    93%{
+        content: 'lo kanye_';
+    }
+    94%{
+        content: 'o kanye_';
+    }
+    95%{
+        content: ' kanye_';
+    }
+    96%{
+        content: 'kanye_';
+    }
+    97%{
+        content: 'anye_';
+    }
+    98%{
+        content: 'ye_';
+    }
+    99%{
+        content: 'e_';
+    }
+    100%{
+        content: '_';
+    }
+    }
